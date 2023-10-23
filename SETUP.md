@@ -12,7 +12,7 @@ Connect Four - Setup Instructions
    apt update
    apt upgrade
    apt install nano curl git
-   ```
+   ```l
 
 2. Create a Docker network for all containers:
    ```shell

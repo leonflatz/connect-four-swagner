@@ -1,0 +1,19 @@
+name: Ci/CD pipeline for the Connect Four (bla bla) game
+on: push
+jobs:
+    
+  build: ## name frei wählbar
+    runs-on: ubuntu-latest ## welchen server hät´ich n gerne
+    
+    steps:
+        - name:  Setup .NET 7
+          uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: 7
+        - name: Checkout repo
+          uses: actions/checkout@v4
+        - name: Build
+          run: dotnet build
+
+
+
