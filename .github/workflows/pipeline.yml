@@ -1,5 +1,5 @@
 name: Ci/CD pipeline for the Connect Four (bla bla) game
-on: push
+on: [ push, workflow_dispatch ]
 jobs:
     
   build: ## name frei wählbar
